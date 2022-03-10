@@ -15,6 +15,8 @@ class QuotesWidget extends StatelessWidget {
     Key? key,
     required this.height,
     required this.width,
+    required this.quoteFontSize,
+    required this.authorFontSize,
   }) : super(key: key);
 
   /// Height of the neumorphic container
@@ -22,6 +24,12 @@ class QuotesWidget extends StatelessWidget {
 
   /// Width of the neumorphic container
   final double width;
+
+  /// font-size of quote text
+  final double quoteFontSize;
+
+  ///font-size of author-name
+  final double authorFontSize;
 
   @override
   Widget build(BuildContext context) {
@@ -74,11 +82,12 @@ class QuotesWidget extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 20, right: 20, top: 10),
                   child: Text(
                     quotesList[r],
-                    style: const TextStyle(
-                        fontSize: 23,
-                        color: Colors.white,
-                        fontFamily: 'Vollkorn',
-                        package: 'quotes_widget'),
+                    style: TextStyle(
+                      fontSize: quoteFontSize,
+                      color: Colors.white,
+                      fontFamily: 'Vollkorn',
+                      package: 'quotes_widget',
+                    ),
                   ),
                 ),
                 Row(
@@ -87,9 +96,10 @@ class QuotesWidget extends StatelessWidget {
                     Text(
                       '\n- ${authorsList[r]}',
                       textAlign: TextAlign.end,
-                      style: const TextStyle(fontSize: 18, color: Colors.white
-                          // color: textColor,
-                          ),
+                      style: TextStyle(
+                        fontSize: authorFontSize,
+                        color: Colors.white,
+                      ),
                     ),
                     const SizedBox(
                       width: 20,

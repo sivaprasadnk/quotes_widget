@@ -30,6 +30,8 @@ class Home extends StatelessWidget {
         child: QuotesWidget(
           width: 300,
           height: 200,
+          quoteFontSize: 21,
+          authorFontSize: 18,
         ),
       ),
     );

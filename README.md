@@ -1,6 +1,6 @@
 # Quotes Widget
 
-QuotesWidget is a package used to display a random quote enclosed by a neumorphic container
+QuotesWidget is a package used to display a random quote enclosed by a neumorphic container.
 
 ![Image](https://github.com/sivaprasadnk/quotes_widget/blob/main/screenshots/screenshot.png)
 ## Getting Started
@@ -9,7 +9,7 @@ Add this to your package's `pubspec.yaml` file
 
 ```yaml
 dependencies:
-  quotes_widget: ^0.0.1
+  quotes_widget: ^0.0.2
 ```
 
 ## Usage
@@ -26,6 +26,8 @@ import 'package:quotes_widget/quotes_widget.dart';
     return QuotesWidget(
         width: 300,
         height: 200,
+        quoteFontSize: 21,
+        authorFontSize: 18,
     ),
   }
 ```

@@ -1,6 +1,6 @@
 name: quotes_widget
-description: A new Flutter package project.
-version: 0.0.1
+description: QuotesWidget is a package used to display a random quote enclosed by a neumorphic container.
+version: 0.0.2
 homepage: https://github.com/sivaprasadnk/quotes_widget
 
 environment:
