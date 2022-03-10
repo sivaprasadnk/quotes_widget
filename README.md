@@ -2,7 +2,7 @@
 
 QuotesWidget is a package used to display a random quote enclosed by a neumorphic container.
 
-![Image](https://github.com/sivaprasadnk/quotes_widget/blob/main/screenshots/screenshot.png)
+![Image](https://github.com/sivaprasadnk/quotes_widget/blob/main/screenshots/Screenshot.png)
 ## Getting Started
 
 Add this to your package's `pubspec.yaml` file
